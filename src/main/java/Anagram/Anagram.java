@@ -5,19 +5,7 @@ import java.util.Scanner;
 
 public class Anagram {
     // İki kelimenin anagram olup olmadığını kontrol eden metot
-    public static boolean areAnagrams(String word1, String word2) {
-        // Küçük/küçük harf farkını ortadan kaldırmak için giriş kelimeleri küçük harfe dönüştürülüyor
-        word1 = word1.toLowerCase();
-        word2 = word2.toLowerCase();
-        // Her kelimenin harfleri ayrılıyor
-        char[] word1Array = word1.toCharArray();
-        char[] word2Array = word2.toCharArray();
-        // Harfleri alfabetik sıraya göre sıralama
-        Arrays.sort(word1Array);
-        Arrays.sort(word2Array);
-        // Sıralanmış harflerin eşitliğini kontrol ederek anagram olup olmadığını belirleme
-        return Arrays.equals(word1Array, word2Array);
-    }
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -40,5 +28,18 @@ public class Anagram {
         } else {
             System.out.println(word1+ " ve "+ word2+" birbirinin anagramı değildir.");
         }
+    }
+    public static boolean areAnagrams(String word1, String word2) {
+        // Küçük/küçük harf farkını ortadan kaldırmak için giriş kelimeleri küçük harfe dönüştürülüyor
+        word1 = word1.toLowerCase();
+        word2 = word2.toLowerCase();
+        // Her kelimenin harfleri ayrılıyor
+        char[] word1Array = word1.toCharArray();
+        char[] word2Array = word2.toCharArray();
+        // Harfleri alfabetik sıraya göre sıralama
+        Arrays.sort(word1Array);
+        Arrays.sort(word2Array);
+        // Sıralanmış harflerin eşitliğini kontrol ederek anagram olup olmadığını belirleme
+        return Arrays.equals(word1Array, word2Array);
     }
 }

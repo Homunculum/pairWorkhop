@@ -4,19 +4,6 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class AmicablePairs {
-    // Toplamı saklamak için bir değişken oluşturuluyor.
-  public static int bolenlerinToplami(int sayi) {
-        int toplam = 0;
-        // 1'den sayının yarısına kadar olan tüm sayılara bölünüp bölünmediği kontrol ediliyor.
-        for (int i = 1; i <= sayi / 2; i++) {
-            // Eğer sayı, i'ye tam bölünüyorsa, i sayıya bir bölen olarak ekleniyor.
-            if (sayi % i == 0) {
-                toplam += i;
-            }
-        }
-        // Toplam değeri döndürülüyor.
-        return toplam;
-    }
 
     public static void main(String[] args) {
         // İlk ve ikinci sayıları saklamak için değişkenler tanımlanıyor.
@@ -41,6 +28,19 @@ public class AmicablePairs {
                 }
             }
         }
+    }
+    // Toplamı saklamak için bir değişken oluşturuluyor.
+    public static int bolenlerinToplami(int sayi) {
+        int toplam = 0;
+        // 1'den sayının yarısına kadar olan tüm sayılara bölünüp bölünmediği kontrol ediliyor.
+        for (int i = 1; i <= sayi / 2; i++) {
+            // Eğer sayı, i'ye tam bölünüyorsa, i sayıya bir bölen olarak ekleniyor.
+            if (sayi % i == 0) {
+                toplam += i;
+            }
+        }
+        // Toplam değeri döndürülüyor.
+        return toplam;
     }
 }
 
