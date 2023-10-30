@@ -1,4 +1,4 @@
-package oopWithNLayeredApp;
+package ArmstrongNumberCheck;
 
 import java.util.Scanner;
 
