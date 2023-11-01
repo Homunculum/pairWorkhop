@@ -1,4 +1,4 @@
-package ArmstrongNumberCheck;
+package armstrongNumberCheck;
 
 import java.util.Scanner;
 

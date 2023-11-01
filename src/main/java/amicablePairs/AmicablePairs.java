@@ -1,7 +1,4 @@
-package AmicablePairs;
-
-import java.util.HashSet;
-import java.util.Scanner;
+package amicablePairs;
 
 public class AmicablePairs {
 

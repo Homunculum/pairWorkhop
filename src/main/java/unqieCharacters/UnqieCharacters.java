@@ -1,4 +1,4 @@
-package UnqieCharacters;
+package unqieCharacters;
 
 import java.util.Scanner;
 

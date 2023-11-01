@@ -1,4 +1,4 @@
-package PerfectNumbers;
+package perfectNumbers;
 
 public class PerfectNumbers {
     public static void main(String[] args) {
